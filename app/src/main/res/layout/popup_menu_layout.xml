@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_popup_background"
+    android:padding="8dp"
+    android:elevation="8dp">
+
+    <TextView
+        android:id="@+id/tv_menu_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Books"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/raleway_bold" android:padding="12dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"/>
+
+    <TextView
+    android:id="@+id/tv_menu_our_store"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Our Store"
+    android:textColor="@android:color/black"
+    android:textSize="18sp"
+    android:fontFamily="@font/raleway_bold"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground"/>
+
+    <Button
+        android:id="@+id/btn_menu_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/raleway_bold"
+        android:background="@drawable/rounded_black_button_background" android:layout_marginTop="8dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="center"
+        android:minHeight="0dp"
+        app:backgroundTint="@null"/> </LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_navbar_background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="129dp">
+
+            <TextView
+                android:id="@+id/tv_books_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="@string/books"
+                android:textColor="#EBEBEB"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_menu_books"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="17dp"
+                android:clickable="true"
+                android:contentDescription="Menu"
+                android:focusable="true"
+                android:padding="8dp"
+                android:src="@drawable/baseline_dehaze_24"
+                app:tint="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your Book"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:paddingStart="16dp">
+
+        <Button
+            android:id="@+id/btn_non_fiction"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/filter_button_selected_white"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="8dp"
+            android:text="Non-Fiction"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_fiction"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/filter_button_unselected_bordered"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="8dp"
+            android:text="Fiction"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_books"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"          android:layout_weight="1"           android:clipToPadding="false"
+        android:paddingBottom="16dp" />
+
+</LinearLayout>
