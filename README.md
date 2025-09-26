@@ -7,7 +7,7 @@ An interactive mobile app that allows users to browse and purchase books, explor
 - View book details with synopses
 - Location-based feature to find nearby bookstores
 - Book purchasing functionality for seamless transactions
-- Collaborative design for intuitive UI/UX
+- Intuitive UI/UX design for easy navigation
 
 
 📽️ Demo:
@@ -18,6 +18,12 @@ An interactive mobile app that allows users to browse and purchase books, explor
 - Android Studio (Jellyfish)
 - Axure RP (UI/UX Prototyping)
 - AI tools (for enhancements)
+
+
+👥 Contributions:
+- Me: Coded core app features in Android Studio and collaborates on functionality
+- Teammate 1: Co-developed coding tasks in Android Studio
+- Teammate 2: Designed UI/UX prototype using Axure RP
 
 
 📂 Repository Structure:
